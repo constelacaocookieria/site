@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
 
 <head>
@@ -33,8 +34,8 @@
             position: fixed;
             width: 60px;
             height: 60px;
-            bottom: 40px;
-            right: 40px;
+            bottom: 30px;
+            right: 20px;
             background-color: #25d366;
             color: #FFF;
             border-radius: 50px;
@@ -45,7 +46,7 @@
         }
 
         .float-upper {
-            bottom: 105px;
+            bottom: 100px;
             background-color: #fb0015;
             display: flex;
             justify-content: center;
@@ -55,13 +56,27 @@
         .float-icon {
             margin-top: 16px;
         }
+
+        @media (max-width: 768px) {
+            .float, .float-upper {
+                width: 50px;
+                height: 50px;
+                font-size: 24px;
+                border-radius: 40px;
+                right: 10px;
+            }
+            .float-icon {
+                margin-top: 12px;
+                bottom: 95px;
+            }
+        }
     </style>
 </head>
 
 <body>
     <a href="https://api.whatsapp.com/send?phone=5551995560426&text=Ol%C3%A1%2C+gostaria+de+fazer+um+pedido."
         class="float" target="_blank">
-        <i class="fa fa-whatsapp float-icon"></i>
+        <i class="fa fa-whatsapp float-icon fa-lg"></i>
     </a>
     <a href="https://www.ifood.com.br/delivery/ok-ok/ok/4fa78530-5973-4049-bc6e-53499793a4ec?UTM_Medium=share"
         class="float float-upper" target="_blank">
